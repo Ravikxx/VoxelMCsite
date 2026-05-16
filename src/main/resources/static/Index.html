@@ -1,10 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>VoxelMc - Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoxelMC - Coming Soon</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: #0d0d0d;
+      color: #ffffff;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      text-align: center;
+      overflow: hidden;
+    }
+    .container { max-width: 700px; padding: 40px 20px; animation: fadeIn 1.2s ease; }
+    .logo {
+      font-size: 3.5rem;
+      font-weight: 900;
+      letter-spacing: 4px;
+      background: linear-gradient(135deg, #00c853, #b2ff59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 10px;
+    }
+    .tagline { font-size: 1rem; letter-spacing: 6px; text-transform: uppercase; color: #888; margin-bottom: 50px; }
+    .status-badge {
+      display: inline-block;
+      background: rgba(0, 200, 83, 0.1);
+      border: 1px solid #00c853;
+      color: #00c853;
+      padding: 8px 24px;
+      border-radius: 50px;
+      font-size: 0.8rem;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 50px;
+    }
+    h1 { font-size: 2.8rem; font-weight: 700; line-height: 1.2; margin-bottom: 20px; color: #f0f0f0; }
+    h1 span {
+      background: linear-gradient(135deg, #00c853, #b2ff59);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    p { font-size: 1.1rem; color: #aaa; line-height: 1.8; margin-bottom: 50px; }
+    .divider { width: 60px; height: 3px; background: linear-gradient(135deg, #00c853, #b2ff59); margin: 0 auto 50px auto; border-radius: 2px; }
+    .blocks { display: flex; justify-content: center; gap: 12px; margin-top: 10px; flex-wrap: wrap; }
+    .block { width: 14px; height: 14px; border-radius: 3px; background: #00c853; animation: pulse 1.4s ease-in-out infinite; }
+    .block:nth-child(2) { animation-delay: 0.2s; background: #69f0ae; }
+    .block:nth-child(3) { animation-delay: 0.4s; background: #b2ff59; }
+    .block:nth-child(4) { animation-delay: 0.6s; background: #69f0ae; }
+    .block:nth-child(5) { animation-delay: 0.8s; background: #00c853; }
+    @keyframes pulse {
+      0%, 100% { transform: scaleY(1); opacity: 0.5; }
+      50% { transform: scaleY(2.5); opacity: 1; }
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .footer { margin-top: 60px; font-size: 0.75rem; color: #444; letter-spacing: 2px; text-transform: uppercase; }
+  </style>
 </head>
 <body>
-
+  <div class="container">
+    <div class="logo">VoxelMC</div>
+    <div class="tagline">Minecraft Server Network</div>
+    <div class="status-badge">&#9679; Under Development</div>
+    <h1>Something <span>epic</span> is<br>being built.</h1>
+    <div class="divider"></div>
+    <p>We're working hard to bring you an amazing Minecraft experience.<br>Check back soon &mdash; it'll be worth the wait.</p>
+    <div class="blocks">
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+      <div class="block"></div>
+    </div>
+    <div class="footer">&copy; 2026 VoxelMC &mdash; All rights reserved</div>
+  </div>
 </body>
 </html>
